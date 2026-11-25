@@ -12,21 +12,24 @@ jobs:
         with:
           ref: main
           fetch-depth: 0
-      - name: Copy and verify source tree
+      - name: Copy and verify exact Git tree
         shell: bash
         run: |
-          set -euo pipefail
+          set -euxo pipefail
           git fetch https://github.com/fengbaifan/Infographic-Style-Repository.git main
           source_tree=$(git rev-parse 'FETCH_HEAD^{tree}')
-          test "$source_tree" = 111a6b42c7f6da436a5ad1ab82b9a40557f365dc
-          git read-tree --reset -u "$source_tree"
-          test "$(git write-tree)" = "$source_tree"
+          echo "Source tree: $source_tree"
+          git ls-tree -r "$source_tree" | wc -l
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if ! git diff --cached --quiet; then
-            git commit -m "Replicate source repository exact file tree"
-            git push origin HEAD:main
+          old=$(git rev-parse HEAD)
+          if [ "$(git rev-parse 'HEAD^{tree}')" != "$source_tree" ]; then
+            new=$(git commit-tree "$source_tree" -p "$old" -m "Replicate fengbaifan source repository exact file tree")
+            test "$(git rev-parse "$new^{tree}")" = "$source_tree"
+            git push origin "$new:refs/heads/main"
           fi
           git fetch origin main
-          test "$(git rev-parse 'origin/main^{tree}')" = "$source_tree"
-          echo "Verified identical tree: $source_tree"
+          target_tree=$(git rev-parse 'FETCH_HEAD^{tree}')
+          echo "Target tree: $target_tree"
+          test "$target_tree" = "$source_tree"
+          echo "Verified identical Git trees"
