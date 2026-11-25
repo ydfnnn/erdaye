@@ -1,0 +1,32 @@
+name: Replicate source tree
+on:
+  push:
+    branches: [replica-sync-20261125]
+permissions:
+  contents: write
+jobs:
+  replica:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Copy and verify source tree
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch https://github.com/fengbaifan/Infographic-Style-Repository.git main
+          source_tree=$(git rev-parse 'FETCH_HEAD^{tree}')
+          test "$source_tree" = 111a6b42c7f6da436a5ad1ab82b9a40557f365dc
+          git read-tree --reset -u "$source_tree"
+          test "$(git write-tree)" = "$source_tree"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --cached --quiet; then
+            git commit -m "Replicate source repository exact file tree"
+            git push origin HEAD:main
+          fi
+          git fetch origin main
+          test "$(git rev-parse 'origin/main^{tree}')" = "$source_tree"
+          echo "Verified identical tree: $source_tree"
