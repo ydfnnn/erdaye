@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-POSTER",
+  "version": "1.0.0",
+  "mode": "replace",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "theme": {
+    "subject": "题签与纸页抽象轮廓",
+    "action": "静态导视",
+    "environment": "暗色展墙式的平面海报",
+    "purpose": "阅读活动的主视觉",
+    "audience": "展览观众",
+    "desired_response": "先从纸页发现标题，再读日期"
+  },
+  "reference_ids": [
+    "REF-01",
+    "REF-02"
+  ],
+  "project_locks": [
+    {
+      "id": "P01",
+      "category": "presentation",
+      "variability": "project_locked",
+      "priority": "must",
+      "target": "标题与日期层级",
+      "requirement": "准确标题，日期位于其下且为从属层级",
+      "check": "检查从上到下的阅读次序与字号层级"
+    }
+  ],
+  "allowed_changes": [
+    "物件、相对落位与环境根据新主题适配，保持适用核心关系。"
+  ],
+  "baseline_output_id": null,
+  "output": {
+    "count": 1,
+    "aspect_ratio": "2:3",
+    "dimensions_px": {
+      "width": 1000,
+      "height": 1500
+    },
+    "format": "PNG"
+  },
+  "text_requirements": {
+    "mode": "exact",
+    "exact_text": [
+      "夜读｜第 3 届",
+      "2026.11.26"
+    ]
+  }
+}

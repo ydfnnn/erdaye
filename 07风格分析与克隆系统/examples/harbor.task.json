@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-HARBOR",
+  "version": "1.0.0",
+  "mode": "apply",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "theme": {
+    "subject": "一盏防波堤灯",
+    "action": "雨夜值守",
+    "environment": "有雾的港口防波堤",
+    "purpose": "叙事插画",
+    "audience": "故事读者",
+    "desired_response": "从高机位沿堤发现守夜灯"
+  },
+  "reference_ids": [
+    "REF-01",
+    "REF-02"
+  ],
+  "project_locks": [],
+  "allowed_changes": [
+    "物件、相对落位与环境根据新主题适配，保持适用核心关系。"
+  ],
+  "baseline_output_id": null,
+  "output": {
+    "count": 1,
+    "aspect_ratio": "3:2",
+    "dimensions_px": null,
+    "format": null
+  },
+  "text_requirements": {
+    "mode": "none",
+    "exact_text": []
+  }
+}

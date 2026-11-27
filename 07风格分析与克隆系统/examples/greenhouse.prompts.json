@@ -1,0 +1,196 @@
+{
+  "zh_json": {
+    "style": {
+      "light_logic": [
+        {
+          "id": "T04",
+          "priority": "must",
+          "text": "用画外右上方的柔光照亮叶缘，周围保持暗冷层次。"
+        }
+      ],
+      "color_palette": [
+        {
+          "id": "C-S01",
+          "priority": "must",
+          "text": "让低饱和冷灰蓝玻璃与暗墙占据大部分画面，小面积琥珀暖色只集中在主读新叶的受光边。"
+        }
+      ],
+      "edge_control": [
+        {
+          "id": "C-S02",
+          "priority": "must",
+          "text": "主读新叶的受光边最清楚且短而连贯，窗框和远处植物以低反差断边融入邻近色面。"
+        }
+      ],
+      "detail_density": [
+        {
+          "id": "C-S03",
+          "priority": "must",
+          "text": "叶脉、叶尖和邻近少量湿气承接主要细节，后景植物、玻璃与外墙保持稀疏暗色块。"
+        }
+      ],
+      "texture": [
+        {
+          "id": "C-S05",
+          "priority": "should",
+          "text": "大暗色面轻微呈现细纸粒，并保持主视觉细节清楚。"
+        }
+      ]
+    },
+    "character": {
+      "subject": [
+        {
+          "id": "T01",
+          "priority": "must",
+          "text": "画一株植入苗盘土块的幼苗。"
+        }
+      ],
+      "distinctive_feature": [
+        {
+          "id": "T02",
+          "priority": "must",
+          "text": "主读新叶叶尖微弯，保留一条清楚的主叶脉。"
+        }
+      ]
+    },
+    "environment": {
+      "setting": [
+        {
+          "id": "T03",
+          "priority": "must",
+          "text": "展现夜间温室，苗盘在近景，冷灰蓝玻璃与窗格退到后景。"
+        }
+      ]
+    },
+    "narrative": {
+      "visual_path": [
+        {
+          "id": "C-S04",
+          "priority": "must",
+          "text": "用近处苗盘暗边和远窗框作低反差引导，视线落到具有唯一暖点、清晰边和主要细节的叶尖。"
+        }
+      ]
+    },
+    "mood": {},
+    "technical": {
+      "negative_constraints": [
+        {
+          "id": "T05",
+          "priority": "must",
+          "text": "把港口水面、船与防波堤留在画外。"
+        }
+      ],
+      "output": {
+        "count": 1,
+        "aspect_ratio": "3:2",
+        "dimensions_px": {
+          "width": 1200,
+          "height": 800
+        },
+        "format": "PNG"
+      },
+      "text_requirements": {
+        "mode": "none",
+        "exact_text": []
+      }
+    }
+  },
+  "en_json": {
+    "style": {
+      "light_logic": [
+        {
+          "id": "T04",
+          "priority": "must",
+          "text": "Use soft light from the upper right outside the frame to illuminate the leaf edge, with cool dark layers around it."
+        }
+      ],
+      "color_palette": [
+        {
+          "id": "C-S01",
+          "priority": "must",
+          "text": "Let low-saturation cool blue-gray glass and dark walls dominate; confine the small amber accent to the lit edge of the focal new leaf."
+        }
+      ],
+      "edge_control": [
+        {
+          "id": "C-S02",
+          "priority": "must",
+          "text": "Keep the lit edge of the focal leaf the clearest, short, continuous contour; merge window frames and distant foliage into adjacent masses with low-contrast broken edges."
+        }
+      ],
+      "detail_density": [
+        {
+          "id": "C-S03",
+          "priority": "must",
+          "text": "Place the main detail in the vein, leaf tip, and a trace of nearby moisture; keep the background plants, glass, and exterior wall as sparse dark masses."
+        }
+      ],
+      "texture": [
+        {
+          "id": "C-S05",
+          "priority": "should",
+          "text": "Let fine paper grain show subtly on broad dark areas, with focal details kept clear."
+        }
+      ]
+    },
+    "character": {
+      "subject": [
+        {
+          "id": "T01",
+          "priority": "must",
+          "text": "Draw one seedling rooted in the soil block of a seed tray."
+        }
+      ],
+      "distinctive_feature": [
+        {
+          "id": "T02",
+          "priority": "must",
+          "text": "Give the focal new leaf a slightly curved tip and one clearly visible main vein."
+        }
+      ]
+    },
+    "environment": {
+      "setting": [
+        {
+          "id": "T03",
+          "priority": "must",
+          "text": "Show a greenhouse at night, with the seed tray in the foreground and cool blue-gray glazing and frames in the background."
+        }
+      ]
+    },
+    "narrative": {
+      "visual_path": [
+        {
+          "id": "C-S04",
+          "priority": "must",
+          "text": "Use the dark edge of the nearby tray and distant frames as low-contrast cues, ending the gaze at the tip where the only warm accent, clearest edge, and primary detail meet."
+        }
+      ]
+    },
+    "mood": {},
+    "technical": {
+      "negative_constraints": [
+        {
+          "id": "T05",
+          "priority": "must",
+          "text": "Keep harbor water, boats, and the breakwater out of the scene."
+        }
+      ],
+      "output": {
+        "count": 1,
+        "aspect_ratio": "3:2",
+        "dimensions_px": {
+          "width": 1200,
+          "height": 800
+        },
+        "format": "PNG"
+      },
+      "text_requirements": {
+        "mode": "none",
+        "exact_text": []
+      }
+    }
+  },
+  "zh_simple": "画一株植入苗盘土块的幼苗。主读新叶叶尖微弯，保留一条清楚的主叶脉。展现夜间温室，苗盘在近景，冷灰蓝玻璃与窗格退到后景。用画外右上方的柔光照亮叶缘，周围保持暗冷层次。让低饱和冷灰蓝玻璃与暗墙占据大部分画面，小面积琥珀暖色只集中在主读新叶的受光边。主读新叶的受光边最清楚且短而连贯，窗框和远处植物以低反差断边融入邻近色面。叶脉、叶尖和邻近少量湿气承接主要细节，后景植物、玻璃与外墙保持稀疏暗色块。用近处苗盘暗边和远窗框作低反差引导，视线落到具有唯一暖点、清晰边和主要细节的叶尖。把港口水面、船与防波堤留在画外。输出 1 张图。画幅 3:2。尺寸 1200 × 800 像素。文件格式 PNG。画面无文字。",
+  "natural_language_zh": "画一株植入苗盘土块的幼苗。主读新叶叶尖微弯，保留一条清楚的主叶脉。\n\n展现夜间温室，苗盘在近景，冷灰蓝玻璃与窗格退到后景。\n\n用画外右上方的柔光照亮叶缘，周围保持暗冷层次。让低饱和冷灰蓝玻璃与暗墙占据大部分画面，小面积琥珀暖色只集中在主读新叶的受光边。主读新叶的受光边最清楚且短而连贯，窗框和远处植物以低反差断边融入邻近色面。叶脉、叶尖和邻近少量湿气承接主要细节，后景植物、玻璃与外墙保持稀疏暗色块。优先采用。大暗色面轻微呈现细纸粒，并保持主视觉细节清楚。\n\n用近处苗盘暗边和远窗框作低反差引导，视线落到具有唯一暖点、清晰边和主要细节的叶尖。\n\n把港口水面、船与防波堤留在画外。\n\n输出 1 张图。画幅 3:2。尺寸 1200 × 800 像素。文件格式 PNG。画面无文字。"
+}

@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0.0",
+  "id": "RS-CASE-0002",
+  "scope": "task",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "task_ref": {
+    "id": "T-CASE-0002",
+    "version": "1.0.0"
+  },
+  "core_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "active_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "rule_exclusions": [
+    {
+      "rule_id": "S05",
+      "reason": "本例先确保小标签、实线和虚线的清晰度，纸粒条件停用。"
+    }
+  ],
+  "required_project_lock_ids": [
+    "P01",
+    "P02",
+    "P03"
+  ],
+  "slots": [],
+  "items": [
+    {
+      "id": "T01",
+      "section": "character",
+      "field": "subject",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "制作一张用于课堂展示的五阶段设计流程信息图。",
+        "en": "Create a five-stage design process infographic for classroom presentation."
+      }
+    },
+    {
+      "id": "T02",
+      "section": "technical",
+      "field": "protected_items",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [
+        "P01"
+      ],
+      "text": {
+        "zh": "用一条清楚可追踪的实线箭头主路径连接且只连接五个阶段。标名顺序为 Brief → Research → Study → Proposals → Delivery，各阶段可独立辨读。",
+        "en": "Connect exactly five readable stages with one traceable solid-arrow chain, in this exact order: Brief → Research → Study → Proposals → Delivery."
+      }
+    },
+    {
+      "id": "T03",
+      "section": "technical",
+      "field": "protected_items",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [
+        "P02"
+      ],
+      "text": {
+        "zh": "仅用一条独立细虚线箭头从 Proposals 指向 Study，在边侧标注「反馈示意」，将其作为图面可见的示意回返。",
+        "en": "Add a single separate thin dashed arrow from Proposals back to Study. Place the exact label “反馈示意” next to the arrow and treat it as an illustrative return inferred from the diagram."
+      }
+    },
+    {
+      "id": "T04",
+      "section": "technical",
+      "field": "negative_constraints",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [
+        "P03"
+      ],
+      "text": {
+        "zh": "采取等权可读的节点，间距服务版面。排除无来源的日期、时长、工作量、数值刻度和因果说明。",
+        "en": "Give the stage nodes equal visual readability and use spacing for layout. Omit unsourced dates, durations, workload measures, numeric axes and causal claims."
+      }
+    },
+    {
+      "id": "C-S01",
+      "section": "style",
+      "field": "color_palette",
+      "priority": "must",
+      "source_rule_ids": [
+        "S01"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "大面积低饱和冷灰蓝构成背景，小面积琥珀暖色只强调中文标题及其邻近的一小处亮面。",
+        "en": "Use broad low-saturation cool blue-gray for the background; limit the small amber accent to the Chinese headline and a tiny adjacent light patch."
+      }
+    },
+    {
+      "id": "C-S02",
+      "section": "style",
+      "field": "edge_control",
+      "priority": "must",
+      "source_rule_ids": [
+        "S02"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "标题的关键字形边缘最清楚，五个阶段的标签与主路径均保持可读，外围色面以低对比断边融接。",
+        "en": "Keep the headline glyph edges clearest, all five labels and the main line legible, and merge peripheral masses with low-contrast broken edges."
+      }
+    },
+    {
+      "id": "C-S03",
+      "section": "style",
+      "field": "detail_density",
+      "priority": "must",
+      "source_rule_ids": [
+        "S03"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "标题区域承接最集中的表现细节，流程区用克制的排版与线条承载完整信息，外围保留大块低密度留白。",
+        "en": "Concentrate the expressive detail in the title area, retain the complete process information in restrained typography and lines, and leave broad low-density space around it."
+      }
+    },
+    {
+      "id": "C-S04",
+      "section": "narrative",
+      "field": "visual_path",
+      "priority": "must",
+      "source_rule_ids": [
+        "S04"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "先读唯一暖点的标题，用低反差空间线索引入主路径，随后按五节点顺序阅读。反馈虚线保持从属。",
+        "en": "Start at the headline as the only warm focus. Use low-contrast spatial cues to lead into the main chain, then read the five nodes in order, with the dashed feedback line subordinate."
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "aspect_ratio": "3:2",
+    "dimensions_px": {
+      "width": 1500,
+      "height": 1000
+    },
+    "format": "PNG"
+  },
+  "text_requirements": {
+    "mode": "exact",
+    "exact_text": [
+      "设计流程",
+      "Brief",
+      "Research",
+      "Study",
+      "Proposals",
+      "Delivery",
+      "反馈示意"
+    ]
+  }
+}

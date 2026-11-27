@@ -1,0 +1,280 @@
+{
+  "schema_version": "1.0.0",
+  "id": "SP-001",
+  "version": "1.0.0",
+  "parent_profile": null,
+  "name": "冷色大场与局部暖点",
+  "status": "provisional",
+  "scope": {
+    "level": "text_based",
+    "applies_to": [
+      "以空间与局部发现为叙事的夜景插画及平面迁移"
+    ],
+    "uncertainties": [
+      "示例参考只有假想文字，文中的观察为教学假设，视觉识别与阈值有待实际图像验证。"
+    ]
+  },
+  "references": [
+    {
+      "id": "REF-01",
+      "roles": [
+        "style_reference"
+      ],
+      "locator": "假想图 旧港栈桥",
+      "version": null,
+      "access": "text_only",
+      "inherit": [
+        "冷色主导与局部暖点",
+        "边缘层级"
+      ]
+    },
+    {
+      "id": "REF-02",
+      "roles": [
+        "style_reference"
+      ],
+      "locator": "假想图 海堤值班室",
+      "version": null,
+      "access": "text_only",
+      "inherit": [
+        "疏密关系",
+        "次级空间线索"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "O01",
+      "kind": "observation",
+      "reference_ids": [
+        "REF-01"
+      ],
+      "region": "水面、栈桥、右下灯",
+      "description": "假想描述给出宽阔冷灰蓝雾水和低反差暗栈桥，灯罩是一处小暖点。灯罩受光边清楚，近处桥面轮廓不闭合。"
+    },
+    {
+      "id": "O02",
+      "kind": "observation",
+      "reference_ids": [
+        "REF-02"
+      ],
+      "region": "海堤、栏杆、值班窗",
+      "description": "假想描述给出暗冷大色面、弱边缘、疏略栏杆、细纸粒、唯一暖色窗沿和少量窗格细节。"
+    },
+    {
+      "id": "I01",
+      "kind": "inference",
+      "reference_ids": [
+        "REF-01",
+        "REF-02"
+      ],
+      "region": "全幅到局部",
+      "description": "低对比环境线索、局部暖色、清楚的短边和少数密集细节共同形成发现顺序。位置与具体道具暂列为可变。"
+    }
+  ],
+  "narrative_stance": "在安静且克制的大空间中发现一处明确的小变化。",
+  "modules": {
+    "A1": {
+      "name": "风格本体",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "B1": {
+      "name": "色彩",
+      "status": "active",
+      "note": "适用于该教学档案的参考描述。",
+      "rule_ids": [
+        "S01"
+      ]
+    },
+    "B2": {
+      "name": "光线",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "B3": {
+      "name": "空间构图",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "B4": {
+      "name": "尺度",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "C1": {
+      "name": "绘画语言",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "C2": {
+      "name": "边缘",
+      "status": "active",
+      "note": "适用于该教学档案的参考描述。",
+      "rule_ids": [
+        "S02"
+      ]
+    },
+    "C3": {
+      "name": "完成度",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "C4": {
+      "name": "材质纹理",
+      "status": "active",
+      "note": "适用于该教学档案的参考描述。",
+      "rule_ids": [
+        "S05"
+      ]
+    },
+    "D1": {
+      "name": "主体设计",
+      "status": "inactive",
+      "note": "",
+      "rule_ids": []
+    },
+    "E1": {
+      "name": "信息密度",
+      "status": "active",
+      "note": "适用于该教学档案的参考描述。",
+      "rule_ids": [
+        "S03"
+      ]
+    },
+    "E2": {
+      "name": "视觉锚点",
+      "status": "active",
+      "note": "适用于该教学档案的参考描述。",
+      "rule_ids": [
+        "S04"
+      ]
+    },
+    "E3": {
+      "name": "视觉张力",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    }
+  },
+  "core_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "rules": [
+    {
+      "id": "S01",
+      "module": "B1",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "evidence_ids": [
+        "O01",
+        "O02"
+      ],
+      "condition": "使用此夜景式冷暖关系",
+      "target": "环境与局部主视觉",
+      "expression": "以低饱和冷灰蓝为广阔基底，少量暖琥珀集中于主视觉受光区域。",
+      "relationship": "冷色占主导，暖色小且单一",
+      "purpose": "观众从低反差环境发现主视觉",
+      "allowed_variation": "暖色具体承担对象、位置、冷色值随题材变动",
+      "requires": [],
+      "excludes": [],
+      "check": "缩略图中环境为冷色主导，暖色仅集中在主视觉附近。"
+    },
+    {
+      "id": "S02",
+      "module": "C2",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "evidence_ids": [
+        "O01",
+        "O02"
+      ],
+      "condition": "可辨主视觉与外围同时存在",
+      "target": "主视觉识别边缘与环境边缘",
+      "expression": "主要辨认边缘清楚、短而连续，外围经过断边和弱对比退入相邻色面。",
+      "relationship": "最清楚边缘属于焦点，环境边缘更弱",
+      "purpose": "提供识别和空间连续",
+      "allowed_variation": "过渡形状、物体轮廓及必要接触边缘随场景变动",
+      "requires": [],
+      "excludes": [],
+      "check": "可读主视觉边界，外围大部分区域无同等清晰边缘。"
+    },
+    {
+      "id": "S03",
+      "module": "E1",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "evidence_ids": [
+        "O01",
+        "O02"
+      ],
+      "condition": "环境承担氛围，局部承担主要信息",
+      "target": "主视觉和背景的信息密度",
+      "expression": "主视觉附近集中可辨细节，大部分背景为简单色块与疏略轮廓。",
+      "relationship": "主辨识区域和高密度区域重合",
+      "purpose": "形成停留并给外围让出空间",
+      "allowed_variation": "具体细节、背景简化程度与媒介可按题材变化",
+      "requires": [
+        "S02"
+      ],
+      "excludes": [],
+      "check": "主视觉有可辨细节，大部分外围保持低密度。"
+    },
+    {
+      "id": "S04",
+      "module": "E2",
+      "category": "style",
+      "variability": "core",
+      "priority": "must",
+      "evidence_ids": [
+        "O01",
+        "O02",
+        "I01"
+      ],
+      "condition": "构图存在可用的弱引导线索",
+      "target": "二级空间线索与唯一主落点",
+      "expression": "低对比空间线索将视线导向局部主视觉，焦点的色光、识别边缘与细节会合。",
+      "relationship": "引导低于落点的显著度",
+      "purpose": "先读整体，再发现局部变化",
+      "allowed_variation": "引导对象、方向、主视觉位置可按主题重排",
+      "requires": [
+        "S01",
+        "S02",
+        "S03"
+      ],
+      "excludes": [],
+      "check": "可追踪由环境到主视觉的路线，图中无同等亮度与密度的第二落点。"
+    },
+    {
+      "id": "S05",
+      "module": "C4",
+      "category": "style",
+      "variability": "conditional",
+      "priority": "should",
+      "evidence_ids": [
+        "O02"
+      ],
+      "condition": "采用纸本插画渲染且能保持必读细节",
+      "target": "大块中暗色面",
+      "expression": "大色面带少量细纸粒，焦点关键细节仍清楚。",
+      "relationship": "纹理强度低于主信息",
+      "purpose": "提示纸本触感",
+      "allowed_variation": "颗粒细度、出现位置和强度随用途控制",
+      "requires": [],
+      "excludes": [],
+      "check": "暗部可感纸粒，关键图文可辨。"
+    }
+  ]
+}

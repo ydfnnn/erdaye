@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-GREENHOUSE",
+  "version": "1.0.0",
+  "mode": "replace",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "theme": {
+    "subject": "一株温室幼苗",
+    "action": "新叶微弯朝向补光",
+    "environment": "低照度夜间温室",
+    "purpose": "自然科普篇章插图",
+    "audience": "科普读者",
+    "desired_response": "从安静空间发现新生长"
+  },
+  "reference_ids": [
+    "REF-01",
+    "REF-02"
+  ],
+  "project_locks": [
+    {
+      "id": "P01",
+      "category": "content",
+      "variability": "project_locked",
+      "priority": "must",
+      "target": "主读新叶",
+      "requirement": "叶尖微弯，有一条清楚的主叶脉",
+      "check": "可见叶尖轮廓及一条主叶脉"
+    }
+  ],
+  "allowed_changes": [
+    "物件、相对落位与环境根据新主题适配，保持适用核心关系。"
+  ],
+  "baseline_output_id": null,
+  "output": {
+    "count": 1,
+    "aspect_ratio": "3:2",
+    "dimensions_px": {
+      "width": 1200,
+      "height": 800
+    },
+    "format": "PNG"
+  },
+  "text_requirements": {
+    "mode": "none",
+    "exact_text": []
+  }
+}

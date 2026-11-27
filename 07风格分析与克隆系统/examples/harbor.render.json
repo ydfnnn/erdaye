@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "id": "RS-HARBOR",
+  "scope": "task",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "task_ref": {
+    "id": "T-HARBOR",
+    "version": "1.0.0"
+  },
+  "core_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "active_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "rule_exclusions": [],
+  "required_project_lock_ids": [],
+  "slots": [],
+  "items": [
+    {
+      "id": "T01",
+      "section": "character",
+      "field": "subject",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "画出防波堤末端一盏守夜灯。",
+        "en": "Depict a single night-watch light at the end of a breakwater."
+      }
+    },
+    {
+      "id": "T02",
+      "section": "environment",
+      "field": "setting",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "场景是细雨与海雾中的夜间港口。",
+        "en": "Set it in a night harbor in light rain and sea fog."
+      }
+    },
+    {
+      "id": "T03",
+      "section": "technical",
+      "field": "shot_type",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "采用较高的斜俯机位，保留可读的堤体走向。",
+        "en": "Use an elevated oblique view with a legible breakwater direction."
+      }
+    },
+    {
+      "id": "C-S01",
+      "section": "style",
+      "field": "color_palette",
+      "priority": "must",
+      "source_rule_ids": [
+        "S01"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "冷灰蓝雨水和雾覆盖大部分画面，少量琥珀暖色集中在防波堤末端的小灯罩。",
+        "en": "Cover most of the image in cool blue-gray rainwater and mist; concentrate the small amber accent on the lamp cover at the end of the breakwater."
+      }
+    },
+    {
+      "id": "C-S02",
+      "section": "style",
+      "field": "edge_control",
+      "priority": "must",
+      "source_rule_ids": [
+        "S02"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "小灯罩面向来路的短边连贯清楚，外围雾、水面和堤栏的边缘低反差且断续。",
+        "en": "Keep the lamp-cover edge facing the approach short, continuous, and clear; break up the low-contrast outlines of mist, water, and railing."
+      }
+    },
+    {
+      "id": "C-S03",
+      "section": "style",
+      "field": "detail_density",
+      "priority": "must",
+      "source_rule_ids": [
+        "S03"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "刻画灯罩的框和一小段湿边。水面、远栏和近侧堤体只保留低密度色块与必要轮廓。",
+        "en": "Detail the lamp housing and a short wet edge. Keep the water, distant rail, and near breakwater low-density with broad shapes and only essential contours."
+      }
+    },
+    {
+      "id": "C-S04",
+      "section": "narrative",
+      "field": "visual_path",
+      "priority": "must",
+      "source_rule_ids": [
+        "S04"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "从近景堤边的暗斜线沿堤向远处小灯移动，使唯一暖点、清晰边和主要细节在灯罩会合。",
+        "en": "Lead the eye along the dark diagonal near edge of the breakwater to the distant lamp cover, where the only warm accent, clearest edge, and principal detail converge."
+      }
+    },
+    {
+      "id": "C-S05",
+      "section": "style",
+      "field": "texture",
+      "priority": "should",
+      "source_rule_ids": [
+        "S05"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "大暗色面轻微呈现细纸粒，并保持主视觉细节清楚。",
+        "en": "Let fine paper grain show subtly on broad dark areas, with focal details kept clear."
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "aspect_ratio": "3:2",
+    "dimensions_px": null,
+    "format": null
+  },
+  "text_requirements": {
+    "mode": "none",
+    "exact_text": []
+  }
+}

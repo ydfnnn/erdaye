@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0.0",
+  "task_ref": {
+    "id": "T-001",
+    "version": "1.0.0"
+  },
+  "output_id": null,
+  "image_status": "not_generated",
+  "execution": {
+    "backend": null,
+    "model_version": null,
+    "entry_point": null,
+    "reference_inputs": [],
+    "submitted_prompt": null,
+    "seed": null
+  },
+  "checks": [
+    {
+      "dimension": "style",
+      "rule_ids": [],
+      "status": "unknown",
+      "evidence": "",
+      "blocking": null
+    },
+    {
+      "dimension": "content",
+      "rule_ids": [],
+      "status": "unknown",
+      "evidence": "",
+      "blocking": null
+    },
+    {
+      "dimension": "locked_items",
+      "rule_ids": [],
+      "status": "unknown",
+      "evidence": "",
+      "blocking": null
+    },
+    {
+      "dimension": "text_and_layout",
+      "rule_ids": [],
+      "status": "unknown",
+      "evidence": "",
+      "blocking": null
+    },
+    {
+      "dimension": "technical_delivery",
+      "rule_ids": [],
+      "status": "unknown",
+      "evidence": "",
+      "blocking": null
+    },
+    {
+      "dimension": "series_consistency",
+      "rule_ids": [],
+      "status": "unknown",
+      "evidence": "",
+      "blocking": null
+    }
+  ],
+  "revision": {
+    "parent_output_id": null,
+    "target_changes": [],
+    "protected_items": [],
+    "affected_rule_ids": [],
+    "target_result": null,
+    "non_target_result": null
+  }
+}

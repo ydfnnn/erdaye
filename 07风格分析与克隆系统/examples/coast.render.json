@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0.0",
+  "id": "RS-COAST",
+  "scope": "task",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "task_ref": {
+    "id": "T-COAST",
+    "version": "1.0.0"
+  },
+  "core_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "active_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "rule_exclusions": [],
+  "required_project_lock_ids": [],
+  "slots": [],
+  "items": [
+    {
+      "id": "T01",
+      "section": "character",
+      "field": "subject",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "在临海步道的岔口放置一块无文字、仅有方向箭头的引导牌。",
+        "en": "Place a single trail marker at the coastal fork, bearing only a directional arrow and no lettering."
+      }
+    },
+    {
+      "id": "T02",
+      "section": "environment",
+      "field": "setting",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "用雾夜石径和短石墙延续沿岸系列的空间。",
+        "en": "Continue the coastal series with a foggy night path and a short stone wall."
+      }
+    },
+    {
+      "id": "T03",
+      "section": "narrative",
+      "field": "intent",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "让观众看清岔路的去向。",
+        "en": "Let the viewer read the direction of the fork."
+      }
+    },
+    {
+      "id": "C-S01",
+      "section": "style",
+      "field": "color_palette",
+      "priority": "must",
+      "source_rule_ids": [
+        "S01"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "夜间低饱和冷灰蓝的海雾与石面占主导，稀少琥珀暖色贴近步道牌的岔口箭头。",
+        "en": "Make low-saturation cool blue-gray night fog and stone dominant; keep scarce amber close to the fork arrow on the trail marker."
+      }
+    },
+    {
+      "id": "C-S02",
+      "section": "style",
+      "field": "edge_control",
+      "priority": "must",
+      "source_rule_ids": [
+        "S02"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "箭头尖和牌面一条短边清楚连续，石墙和海雾边缘疏断并融入冷色块。",
+        "en": "Keep the arrow tip and one short edge of the sign continuous and crisp; break and merge the stone-wall and mist edges into cool masses."
+      }
+    },
+    {
+      "id": "C-S03",
+      "section": "style",
+      "field": "detail_density",
+      "priority": "must",
+      "source_rule_ids": [
+        "S03"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "把牌面箭头和少量湿石粒作为局部细节，背景岩壁与雾只画低密度色面。",
+        "en": "Focus local detail on the arrow and a few wet stone grains; use low-density color planes for the rock face and fog."
+      }
+    },
+    {
+      "id": "C-S04",
+      "section": "narrative",
+      "field": "visual_path",
+      "priority": "must",
+      "source_rule_ids": [
+        "S04"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "由低反差的石板小径和短墙指向岔路牌，让箭头、琥珀色反光和最清楚短边形成一个落点。",
+        "en": "Use the low-contrast stone path and short wall to lead to the fork marker, aligning the arrow, amber reflection, and clearest short edge at one focus."
+      }
+    },
+    {
+      "id": "C-S05",
+      "section": "style",
+      "field": "texture",
+      "priority": "should",
+      "source_rule_ids": [
+        "S05"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "大暗色面轻微呈现细纸粒，并保持主视觉细节清楚。",
+        "en": "Let fine paper grain show subtly on broad dark areas, with focal details kept clear."
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "aspect_ratio": "4:3",
+    "dimensions_px": null,
+    "format": null
+  },
+  "text_requirements": {
+    "mode": "none",
+    "exact_text": []
+  }
+}

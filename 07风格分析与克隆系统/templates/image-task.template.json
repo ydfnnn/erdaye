@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-001",
+  "version": "1.0.0",
+  "mode": "apply",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "theme": {
+    "subject": "",
+    "action": "",
+    "environment": "",
+    "purpose": "",
+    "audience": "",
+    "desired_response": ""
+  },
+  "reference_ids": [],
+  "project_locks": [],
+  "allowed_changes": [],
+  "baseline_output_id": null,
+  "output": {
+    "count": null,
+    "aspect_ratio": null,
+    "dimensions_px": null,
+    "format": null
+  },
+  "text_requirements": {
+    "mode": "unspecified",
+    "exact_text": []
+  }
+}

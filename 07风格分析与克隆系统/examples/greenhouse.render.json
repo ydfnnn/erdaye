@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0.0",
+  "id": "RS-GREENHOUSE",
+  "scope": "task",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "task_ref": {
+    "id": "T-GREENHOUSE",
+    "version": "1.0.0"
+  },
+  "core_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "active_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "rule_exclusions": [],
+  "required_project_lock_ids": [
+    "P01"
+  ],
+  "slots": [],
+  "items": [
+    {
+      "id": "T01",
+      "section": "character",
+      "field": "subject",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "画一株植入苗盘土块的幼苗。",
+        "en": "Draw one seedling rooted in the soil block of a seed tray."
+      }
+    },
+    {
+      "id": "T02",
+      "section": "character",
+      "field": "distinctive_feature",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [
+        "P01"
+      ],
+      "text": {
+        "zh": "主读新叶叶尖微弯，保留一条清楚的主叶脉。",
+        "en": "Give the focal new leaf a slightly curved tip and one clearly visible main vein."
+      }
+    },
+    {
+      "id": "T03",
+      "section": "environment",
+      "field": "setting",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "展现夜间温室，苗盘在近景，冷灰蓝玻璃与窗格退到后景。",
+        "en": "Show a greenhouse at night, with the seed tray in the foreground and cool blue-gray glazing and frames in the background."
+      }
+    },
+    {
+      "id": "T04",
+      "section": "style",
+      "field": "light_logic",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "用画外右上方的柔光照亮叶缘，周围保持暗冷层次。",
+        "en": "Use soft light from the upper right outside the frame to illuminate the leaf edge, with cool dark layers around it."
+      }
+    },
+    {
+      "id": "T05",
+      "section": "technical",
+      "field": "negative_constraints",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "把港口水面、船与防波堤留在画外。",
+        "en": "Keep harbor water, boats, and the breakwater out of the scene."
+      }
+    },
+    {
+      "id": "C-S01",
+      "section": "style",
+      "field": "color_palette",
+      "priority": "must",
+      "source_rule_ids": [
+        "S01"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "让低饱和冷灰蓝玻璃与暗墙占据大部分画面，小面积琥珀暖色只集中在主读新叶的受光边。",
+        "en": "Let low-saturation cool blue-gray glass and dark walls dominate; confine the small amber accent to the lit edge of the focal new leaf."
+      }
+    },
+    {
+      "id": "C-S02",
+      "section": "style",
+      "field": "edge_control",
+      "priority": "must",
+      "source_rule_ids": [
+        "S02"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "主读新叶的受光边最清楚且短而连贯，窗框和远处植物以低反差断边融入邻近色面。",
+        "en": "Keep the lit edge of the focal leaf the clearest, short, continuous contour; merge window frames and distant foliage into adjacent masses with low-contrast broken edges."
+      }
+    },
+    {
+      "id": "C-S03",
+      "section": "style",
+      "field": "detail_density",
+      "priority": "must",
+      "source_rule_ids": [
+        "S03"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "叶脉、叶尖和邻近少量湿气承接主要细节，后景植物、玻璃与外墙保持稀疏暗色块。",
+        "en": "Place the main detail in the vein, leaf tip, and a trace of nearby moisture; keep the background plants, glass, and exterior wall as sparse dark masses."
+      }
+    },
+    {
+      "id": "C-S04",
+      "section": "narrative",
+      "field": "visual_path",
+      "priority": "must",
+      "source_rule_ids": [
+        "S04"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "用近处苗盘暗边和远窗框作低反差引导，视线落到具有唯一暖点、清晰边和主要细节的叶尖。",
+        "en": "Use the dark edge of the nearby tray and distant frames as low-contrast cues, ending the gaze at the tip where the only warm accent, clearest edge, and primary detail meet."
+      }
+    },
+    {
+      "id": "C-S05",
+      "section": "style",
+      "field": "texture",
+      "priority": "should",
+      "source_rule_ids": [
+        "S05"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "大暗色面轻微呈现细纸粒，并保持主视觉细节清楚。",
+        "en": "Let fine paper grain show subtly on broad dark areas, with focal details kept clear."
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "aspect_ratio": "3:2",
+    "dimensions_px": {
+      "width": 1200,
+      "height": 800
+    },
+    "format": "PNG"
+  },
+  "text_requirements": {
+    "mode": "none",
+    "exact_text": []
+  }
+}

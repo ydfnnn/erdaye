@@ -1,0 +1,135 @@
+{
+  "schema_version": "1.0.0",
+  "id": "RS-REUSABLE",
+  "scope": "style_only",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "task_ref": null,
+  "core_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "active_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04",
+    "S05"
+  ],
+  "rule_exclusions": [],
+  "required_project_lock_ids": [],
+  "slots": [
+    "subject",
+    "environment"
+  ],
+  "items": [
+    {
+      "id": "T01",
+      "section": "character",
+      "field": "subject",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "以 {{subject}} 为主体。",
+        "en": "Use {{subject}} as the subject."
+      }
+    },
+    {
+      "id": "T02",
+      "section": "environment",
+      "field": "setting",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "场景为 {{environment}}。",
+        "en": "Set the image in {{environment}}."
+      }
+    },
+    {
+      "id": "C-S01",
+      "section": "style",
+      "field": "color_palette",
+      "priority": "must",
+      "source_rule_ids": [
+        "S01"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "低饱和冷灰蓝环境占大面积，少量琥珀暖色集中在 {{subject}} 的主读区域。",
+        "en": "Let low-saturation cool blue-gray dominate the environment; concentrate a small amber accent in the main readable area of {{subject}}."
+      }
+    },
+    {
+      "id": "C-S02",
+      "section": "style",
+      "field": "edge_control",
+      "priority": "must",
+      "source_rule_ids": [
+        "S02"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "{{subject}} 的辨识边缘短而清楚，外围轮廓较弱并断续融入相邻色面。",
+        "en": "Use short, clear recognition edges on {{subject}}; keep peripheral contours weaker, broken, and merged into neighboring color masses."
+      }
+    },
+    {
+      "id": "C-S03",
+      "section": "style",
+      "field": "detail_density",
+      "priority": "must",
+      "source_rule_ids": [
+        "S03"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "细节集中于 {{subject}} 的主要辨认处，环境大部分区域表现为简单色块和疏略轮廓。",
+        "en": "Concentrate detail on the most recognizable part of {{subject}}; leave most of the environment as simple color masses and sparse contours."
+      }
+    },
+    {
+      "id": "C-S04",
+      "section": "narrative",
+      "field": "visual_path",
+      "priority": "must",
+      "source_rule_ids": [
+        "S04"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "在 {{environment}} 中用低对比线索将视线引到唯一主读点，让暖色、清晰边缘和主要细节在那里会合。",
+        "en": "In {{environment}}, use low-contrast space cues to lead the eye to one main focus where warm color, clear edges, and the highest detail converge."
+      }
+    },
+    {
+      "id": "C-S05",
+      "section": "style",
+      "field": "texture",
+      "priority": "should",
+      "source_rule_ids": [
+        "S05"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "大暗色面轻微呈现细纸粒，并保持主视觉细节清楚。",
+        "en": "Let fine paper grain show subtly on broad dark areas, with focal details kept clear."
+      }
+    }
+  ],
+  "output": {
+    "count": null,
+    "aspect_ratio": null,
+    "dimensions_px": null,
+    "format": null
+  },
+  "text_requirements": {
+    "mode": "unspecified",
+    "exact_text": []
+  }
+}

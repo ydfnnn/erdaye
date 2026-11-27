@@ -1,0 +1,126 @@
+{
+  "zh_json": {
+    "style": {
+      "color_palette": [
+        {
+          "id": "C-S01",
+          "priority": "must",
+          "text": "低饱和冷灰蓝环境占大面积，少量琥珀暖色集中在 {{subject}} 的主读区域。"
+        }
+      ],
+      "edge_control": [
+        {
+          "id": "C-S02",
+          "priority": "must",
+          "text": "{{subject}} 的辨识边缘短而清楚，外围轮廓较弱并断续融入相邻色面。"
+        }
+      ],
+      "detail_density": [
+        {
+          "id": "C-S03",
+          "priority": "must",
+          "text": "细节集中于 {{subject}} 的主要辨认处，环境大部分区域表现为简单色块和疏略轮廓。"
+        }
+      ],
+      "texture": [
+        {
+          "id": "C-S05",
+          "priority": "should",
+          "text": "大暗色面轻微呈现细纸粒，并保持主视觉细节清楚。"
+        }
+      ]
+    },
+    "character": {
+      "subject": [
+        {
+          "id": "T01",
+          "priority": "must",
+          "text": "以 {{subject}} 为主体。"
+        }
+      ]
+    },
+    "environment": {
+      "setting": [
+        {
+          "id": "T02",
+          "priority": "must",
+          "text": "场景为 {{environment}}。"
+        }
+      ]
+    },
+    "narrative": {
+      "visual_path": [
+        {
+          "id": "C-S04",
+          "priority": "must",
+          "text": "在 {{environment}} 中用低对比线索将视线引到唯一主读点，让暖色、清晰边缘和主要细节在那里会合。"
+        }
+      ]
+    },
+    "mood": {},
+    "technical": {}
+  },
+  "en_json": {
+    "style": {
+      "color_palette": [
+        {
+          "id": "C-S01",
+          "priority": "must",
+          "text": "Let low-saturation cool blue-gray dominate the environment; concentrate a small amber accent in the main readable area of {{subject}}."
+        }
+      ],
+      "edge_control": [
+        {
+          "id": "C-S02",
+          "priority": "must",
+          "text": "Use short, clear recognition edges on {{subject}}; keep peripheral contours weaker, broken, and merged into neighboring color masses."
+        }
+      ],
+      "detail_density": [
+        {
+          "id": "C-S03",
+          "priority": "must",
+          "text": "Concentrate detail on the most recognizable part of {{subject}}; leave most of the environment as simple color masses and sparse contours."
+        }
+      ],
+      "texture": [
+        {
+          "id": "C-S05",
+          "priority": "should",
+          "text": "Let fine paper grain show subtly on broad dark areas, with focal details kept clear."
+        }
+      ]
+    },
+    "character": {
+      "subject": [
+        {
+          "id": "T01",
+          "priority": "must",
+          "text": "Use {{subject}} as the subject."
+        }
+      ]
+    },
+    "environment": {
+      "setting": [
+        {
+          "id": "T02",
+          "priority": "must",
+          "text": "Set the image in {{environment}}."
+        }
+      ]
+    },
+    "narrative": {
+      "visual_path": [
+        {
+          "id": "C-S04",
+          "priority": "must",
+          "text": "In {{environment}}, use low-contrast space cues to lead the eye to one main focus where warm color, clear edges, and the highest detail converge."
+        }
+      ]
+    },
+    "mood": {},
+    "technical": {}
+  },
+  "zh_simple": "以 {{subject}} 为主体。场景为 {{environment}}。低饱和冷灰蓝环境占大面积，少量琥珀暖色集中在 {{subject}} 的主读区域。{{subject}} 的辨识边缘短而清楚，外围轮廓较弱并断续融入相邻色面。细节集中于 {{subject}} 的主要辨认处，环境大部分区域表现为简单色块和疏略轮廓。在 {{environment}} 中用低对比线索将视线引到唯一主读点，让暖色、清晰边缘和主要细节在那里会合。",
+  "natural_language_zh": "以 {{subject}} 为主体。\n\n场景为 {{environment}}。\n\n低饱和冷灰蓝环境占大面积，少量琥珀暖色集中在 {{subject}} 的主读区域。{{subject}} 的辨识边缘短而清楚，外围轮廓较弱并断续融入相邻色面。细节集中于 {{subject}} 的主要辨认处，环境大部分区域表现为简单色块和疏略轮廓。优先采用。大暗色面轻微呈现细纸粒，并保持主视觉细节清楚。\n\n在 {{environment}} 中用低对比线索将视线引到唯一主读点，让暖色、清晰边缘和主要细节在那里会合。"
+}

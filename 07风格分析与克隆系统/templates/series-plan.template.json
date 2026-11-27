@@ -1,0 +1,55 @@
+{
+  "schema_version": "1.0.0",
+  "id": "SERIES-001",
+  "version": "1.0.0",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "narrative_arc": "",
+  "shared": {
+    "style_rule_ids": [],
+    "style_anchors": {
+      "line_quality": "",
+      "color_palette": "",
+      "light_logic": "",
+      "space_treatment": "",
+      "detail_density": ""
+    },
+    "characters": [
+      {
+        "id": "CHAR-01",
+        "baseline_reference_ids": [],
+        "identity_features": [],
+        "allowed_variations": []
+      }
+    ],
+    "assets": [
+      {
+        "id": "ASSET-01",
+        "version": null,
+        "reference_id": null,
+        "must_keep": []
+      }
+    ]
+  },
+  "frames": [
+    {
+      "id": "F01",
+      "task_ref": null,
+      "event": "",
+      "new_information": "",
+      "shot": {
+        "size": "",
+        "angle": "",
+        "primary_focus": ""
+      },
+      "continuity": {
+        "previous_frame": null,
+        "previous_relation": "",
+        "screen_direction": "",
+        "carried_asset_ids": []
+      }
+    }
+  ]
+}

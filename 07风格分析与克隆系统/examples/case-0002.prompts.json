@@ -1,0 +1,178 @@
+{
+  "zh_json": {
+    "style": {
+      "color_palette": [
+        {
+          "id": "C-S01",
+          "priority": "must",
+          "text": "大面积低饱和冷灰蓝构成背景，小面积琥珀暖色只强调中文标题及其邻近的一小处亮面。"
+        }
+      ],
+      "edge_control": [
+        {
+          "id": "C-S02",
+          "priority": "must",
+          "text": "标题的关键字形边缘最清楚，五个阶段的标签与主路径均保持可读，外围色面以低对比断边融接。"
+        }
+      ],
+      "detail_density": [
+        {
+          "id": "C-S03",
+          "priority": "must",
+          "text": "标题区域承接最集中的表现细节，流程区用克制的排版与线条承载完整信息，外围保留大块低密度留白。"
+        }
+      ]
+    },
+    "character": {
+      "subject": [
+        {
+          "id": "T01",
+          "priority": "must",
+          "text": "制作一张用于课堂展示的五阶段设计流程信息图。"
+        }
+      ]
+    },
+    "environment": {},
+    "narrative": {
+      "visual_path": [
+        {
+          "id": "C-S04",
+          "priority": "must",
+          "text": "先读唯一暖点的标题，用低反差空间线索引入主路径，随后按五节点顺序阅读。反馈虚线保持从属。"
+        }
+      ]
+    },
+    "mood": {},
+    "technical": {
+      "protected_items": [
+        {
+          "id": "T02",
+          "priority": "must",
+          "text": "用一条清楚可追踪的实线箭头主路径连接且只连接五个阶段。标名顺序为 Brief → Research → Study → Proposals → Delivery，各阶段可独立辨读。"
+        },
+        {
+          "id": "T03",
+          "priority": "must",
+          "text": "仅用一条独立细虚线箭头从 Proposals 指向 Study，在边侧标注「反馈示意」，将其作为图面可见的示意回返。"
+        }
+      ],
+      "negative_constraints": [
+        {
+          "id": "T04",
+          "priority": "must",
+          "text": "采取等权可读的节点，间距服务版面。排除无来源的日期、时长、工作量、数值刻度和因果说明。"
+        }
+      ],
+      "output": {
+        "count": 1,
+        "aspect_ratio": "3:2",
+        "dimensions_px": {
+          "width": 1500,
+          "height": 1000
+        },
+        "format": "PNG"
+      },
+      "text_requirements": {
+        "mode": "exact",
+        "exact_text": [
+          "设计流程",
+          "Brief",
+          "Research",
+          "Study",
+          "Proposals",
+          "Delivery",
+          "反馈示意"
+        ]
+      }
+    }
+  },
+  "en_json": {
+    "style": {
+      "color_palette": [
+        {
+          "id": "C-S01",
+          "priority": "must",
+          "text": "Use broad low-saturation cool blue-gray for the background; limit the small amber accent to the Chinese headline and a tiny adjacent light patch."
+        }
+      ],
+      "edge_control": [
+        {
+          "id": "C-S02",
+          "priority": "must",
+          "text": "Keep the headline glyph edges clearest, all five labels and the main line legible, and merge peripheral masses with low-contrast broken edges."
+        }
+      ],
+      "detail_density": [
+        {
+          "id": "C-S03",
+          "priority": "must",
+          "text": "Concentrate the expressive detail in the title area, retain the complete process information in restrained typography and lines, and leave broad low-density space around it."
+        }
+      ]
+    },
+    "character": {
+      "subject": [
+        {
+          "id": "T01",
+          "priority": "must",
+          "text": "Create a five-stage design process infographic for classroom presentation."
+        }
+      ]
+    },
+    "environment": {},
+    "narrative": {
+      "visual_path": [
+        {
+          "id": "C-S04",
+          "priority": "must",
+          "text": "Start at the headline as the only warm focus. Use low-contrast spatial cues to lead into the main chain, then read the five nodes in order, with the dashed feedback line subordinate."
+        }
+      ]
+    },
+    "mood": {},
+    "technical": {
+      "protected_items": [
+        {
+          "id": "T02",
+          "priority": "must",
+          "text": "Connect exactly five readable stages with one traceable solid-arrow chain, in this exact order: Brief → Research → Study → Proposals → Delivery."
+        },
+        {
+          "id": "T03",
+          "priority": "must",
+          "text": "Add a single separate thin dashed arrow from Proposals back to Study. Place the exact label “反馈示意” next to the arrow and treat it as an illustrative return inferred from the diagram."
+        }
+      ],
+      "negative_constraints": [
+        {
+          "id": "T04",
+          "priority": "must",
+          "text": "Give the stage nodes equal visual readability and use spacing for layout. Omit unsourced dates, durations, workload measures, numeric axes and causal claims."
+        }
+      ],
+      "output": {
+        "count": 1,
+        "aspect_ratio": "3:2",
+        "dimensions_px": {
+          "width": 1500,
+          "height": 1000
+        },
+        "format": "PNG"
+      },
+      "text_requirements": {
+        "mode": "exact",
+        "exact_text": [
+          "设计流程",
+          "Brief",
+          "Research",
+          "Study",
+          "Proposals",
+          "Delivery",
+          "反馈示意"
+        ]
+      }
+    }
+  },
+  "zh_simple": "制作一张用于课堂展示的五阶段设计流程信息图。大面积低饱和冷灰蓝构成背景，小面积琥珀暖色只强调中文标题及其邻近的一小处亮面。标题的关键字形边缘最清楚，五个阶段的标签与主路径均保持可读，外围色面以低对比断边融接。标题区域承接最集中的表现细节，流程区用克制的排版与线条承载完整信息，外围保留大块低密度留白。先读唯一暖点的标题，用低反差空间线索引入主路径，随后按五节点顺序阅读。反馈虚线保持从属。用一条清楚可追踪的实线箭头主路径连接且只连接五个阶段。标名顺序为 Brief → Research → Study → Proposals → Delivery，各阶段可独立辨读。仅用一条独立细虚线箭头从 Proposals 指向 Study，在边侧标注「反馈示意」，将其作为图面可见的示意回返。采取等权可读的节点，间距服务版面。排除无来源的日期、时长、工作量、数值刻度和因果说明。输出 1 张图。画幅 3:2。尺寸 1500 × 1000 像素。文件格式 PNG。画面逐字呈现 \"设计流程\"、\"Brief\"、\"Research\"、\"Study\"、\"Proposals\"、\"Delivery\"、\"反馈示意\"，外侧引号仅用于划分条目。",
+  "natural_language_zh": "制作一张用于课堂展示的五阶段设计流程信息图。\n\n大面积低饱和冷灰蓝构成背景，小面积琥珀暖色只强调中文标题及其邻近的一小处亮面。标题的关键字形边缘最清楚，五个阶段的标签与主路径均保持可读，外围色面以低对比断边融接。标题区域承接最集中的表现细节，流程区用克制的排版与线条承载完整信息，外围保留大块低密度留白。\n\n先读唯一暖点的标题，用低反差空间线索引入主路径，随后按五节点顺序阅读。反馈虚线保持从属。\n\n用一条清楚可追踪的实线箭头主路径连接且只连接五个阶段。标名顺序为 Brief → Research → Study → Proposals → Delivery，各阶段可独立辨读。仅用一条独立细虚线箭头从 Proposals 指向 Study，在边侧标注「反馈示意」，将其作为图面可见的示意回返。采取等权可读的节点，间距服务版面。排除无来源的日期、时长、工作量、数值刻度和因果说明。\n\n输出 1 张图。画幅 3:2。尺寸 1500 × 1000 像素。文件格式 PNG。画面逐字呈现 \"设计流程\"、\"Brief\"、\"Research\"、\"Study\"、\"Proposals\"、\"Delivery\"、\"反馈示意\"，外侧引号仅用于划分条目。"
+}

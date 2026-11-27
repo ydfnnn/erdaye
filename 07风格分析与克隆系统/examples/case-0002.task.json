@@ -1,0 +1,138 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-CASE-0002",
+  "version": "1.0.0",
+  "mode": "apply",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "theme": {
+    "subject": "课程展示用的五阶段设计流程信息图",
+    "action": "主路径按既有阶段名称推进，辅以一条明确标记的示意回返",
+    "environment": "低饱和冷灰蓝基底的图文版面",
+    "purpose": "演示从 02 的案例数据经 06 的视觉编码调用 07 风格迁移",
+    "audience": "需要一眼理解流程推进关系的课程读者",
+    "desired_response": "先见标题，顺着主路径读完全部阶段，辨明局部回返的示意性质"
+  },
+  "reference_ids": [],
+  "infographic_context": {
+    "primary_logic": "编年型",
+    "format_tags": [
+      "05-流程图型-Process"
+    ],
+    "case_refs": [
+      "CASE-0002"
+    ],
+    "source_revision": "615dc201f0c5ad2e6c862c57bab2085873ad2f2d",
+    "data_sources": [
+      {
+        "path": "02-信息图形类型案例/05-流程图型-Process/案例/CASE-0002-Our-Process-曲线流程信息图/基础数据集.csv",
+        "role": "content_reference",
+        "fields": [
+          "stage_id",
+          "order_key",
+          "stage_name"
+        ]
+      },
+      {
+        "path": "02-信息图形类型案例/05-流程图型-Process/案例/CASE-0002-Our-Process-曲线流程信息图/流程关系.csv",
+        "role": "content_reference",
+        "fields": [
+          "relation_id",
+          "source_stage_id",
+          "target_stage_id",
+          "relation_type",
+          "evidence_level"
+        ]
+      },
+      {
+        "path": "02-信息图形类型案例/05-流程图型-Process/案例/CASE-0002-Our-Process-曲线流程信息图/数据字典.md",
+        "role": "content_reference",
+        "fields": []
+      }
+    ],
+    "narrative_ref": "06-XXX主题信息图形设计/05-叙事框架搭建/README.md",
+    "encoding_ref": "06-XXX主题信息图形设计/06-视觉编码/README.md",
+    "method_refs": [
+      "01-信息图形数据逻辑/01-编年型信息图形概念定义.md",
+      "05-Gestalt视觉组织原则/README.md"
+    ],
+    "data_boundaries": [
+      {
+        "status": "transcribed",
+        "description": "五个原英文阶段标题来自基础数据集，随两版 JSON 原样保留。"
+      },
+      {
+        "status": "layout_inference",
+        "description": "主顺序来自图面布局与关系表。只表达该案例示意的推进次序。"
+      },
+      {
+        "status": "visual_inference",
+        "description": "本例保留 Proposals → Study 的图面反馈推断，并在图上标为「反馈示意」。"
+      },
+      {
+        "status": "unknown",
+        "description": "原案例未给日期、时长、数量或统计量。路径长短与节点大小用于版面。"
+      },
+      {
+        "status": "design_choice",
+        "description": "新增中文标题与反馈说明。用教学风格档案决定色域、边缘和疏密。"
+      }
+    ]
+  },
+  "project_locks": [
+    {
+      "id": "P01",
+      "category": "content",
+      "variability": "project_locked",
+      "priority": "must",
+      "target": "主序列与阶段文字",
+      "requirement": "Brief → Research → Study → Proposals → Delivery",
+      "check": "点数五个阶段，逐字核对名称，由实线箭头追踪顺序。"
+    },
+    {
+      "id": "P02",
+      "category": "content",
+      "variability": "project_locked",
+      "priority": "must",
+      "target": "回返方向与证据状态",
+      "requirement": "Proposals → Study，以细虚线和「反馈示意」标注。",
+      "check": "检查箭头头部指向 Study，标注可辨，反馈清楚地区别于主路径。"
+    },
+    {
+      "id": "P03",
+      "category": "content",
+      "variability": "project_locked",
+      "priority": "must",
+      "target": "定量事实边界",
+      "requirement": "节点大小和路径间距只用来组织版面，画面排除无来源的日期、时长、数据值与数轴。",
+      "check": "检查无擅自添加的比例、指标、数轴、业务因果或时间间隔。"
+    }
+  ],
+  "allowed_changes": [
+    "非数值背景色、线条边缘、装饰纹理、标题的视觉强调和版面留白。"
+  ],
+  "baseline_output_id": null,
+  "output": {
+    "count": 1,
+    "aspect_ratio": "3:2",
+    "dimensions_px": {
+      "width": 1500,
+      "height": 1000
+    },
+    "format": "PNG"
+  },
+  "text_requirements": {
+    "mode": "exact",
+    "exact_text": [
+      "设计流程",
+      "Brief",
+      "Research",
+      "Study",
+      "Proposals",
+      "Delivery",
+      "反馈示意"
+    ]
+  }
+}

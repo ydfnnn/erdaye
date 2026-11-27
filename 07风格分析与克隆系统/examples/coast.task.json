@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0.0",
+  "id": "T-COAST",
+  "version": "1.0.0",
+  "mode": "expand",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "theme": {
+    "subject": "一块岔路引导牌",
+    "action": "引导旅客到沿岸步道",
+    "environment": "无人的海雾步道和短石墙",
+    "purpose": "沿岸系列插画",
+    "audience": "旅行随笔读者",
+    "desired_response": "先读石径再辨出方向"
+  },
+  "reference_ids": [
+    "REF-01",
+    "REF-02"
+  ],
+  "project_locks": [],
+  "allowed_changes": [
+    "物件、相对落位与环境根据新主题适配，保持适用核心关系。"
+  ],
+  "baseline_output_id": null,
+  "output": {
+    "count": 1,
+    "aspect_ratio": "4:3",
+    "dimensions_px": null,
+    "format": null
+  },
+  "text_requirements": {
+    "mode": "none",
+    "exact_text": []
+  }
+}

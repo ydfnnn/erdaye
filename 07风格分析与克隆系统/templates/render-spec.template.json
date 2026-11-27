@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "id": "RS-TEMPLATE",
+  "scope": "style_only",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "task_ref": null,
+  "core_style_rule_ids": [],
+  "active_style_rule_ids": [],
+  "rule_exclusions": [],
+  "required_project_lock_ids": [],
+  "slots": [
+    "subject",
+    "environment"
+  ],
+  "items": [
+    {
+      "id": "T01",
+      "section": "character",
+      "field": "subject",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "以 {{subject}} 为主体。",
+        "en": "Use {{subject}} as the subject."
+      }
+    },
+    {
+      "id": "T02",
+      "section": "environment",
+      "field": "setting",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "场景为 {{environment}}。",
+        "en": "Set the image in {{environment}}."
+      }
+    }
+  ],
+  "output": {
+    "count": null,
+    "aspect_ratio": null,
+    "dimensions_px": null,
+    "format": null
+  },
+  "text_requirements": {
+    "mode": "unspecified",
+    "exact_text": []
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0.0",
+  "id": "RS-POSTER",
+  "scope": "task",
+  "profile_ref": {
+    "id": "SP-001",
+    "version": "1.0.0"
+  },
+  "task_ref": {
+    "id": "T-POSTER",
+    "version": "1.0.0"
+  },
+  "core_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "active_style_rule_ids": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "rule_exclusions": [
+    {
+      "rule_id": "S05",
+      "reason": "本次主视觉要求干净平面大色块和精确字形，纸粒条件停用。"
+    }
+  ],
+  "required_project_lock_ids": [
+    "P01"
+  ],
+  "slots": [],
+  "items": [
+    {
+      "id": "T01",
+      "section": "character",
+      "field": "subject",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "表现阅读活动的主标题与抽象纸页轮廓组成的海报。",
+        "en": "Create a reading-event poster featuring the main title and abstract page silhouettes."
+      }
+    },
+    {
+      "id": "T02",
+      "section": "technical",
+      "field": "protected_items",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [
+        "P01"
+      ],
+      "text": {
+        "zh": "日期紧随主标题置于下方并降低字号，保持从上到下的阅读顺序。",
+        "en": "Set the date immediately below the main title at a smaller size, preserving a top-to-bottom reading order."
+      }
+    },
+    {
+      "id": "T03",
+      "section": "environment",
+      "field": "setting",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "用展墙般的平面大冷色块建立安静环境。",
+        "en": "Establish a quiet setting with broad cool color masses like a flat exhibition wall."
+      }
+    },
+    {
+      "id": "T04",
+      "section": "style",
+      "field": "rendering_style",
+      "priority": "must",
+      "source_rule_ids": [],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "画面使用干净的平面色块，优先保证字形边缘清楚。",
+        "en": "Use clean flat color areas and prioritize crisp glyph edges."
+      }
+    },
+    {
+      "id": "C-S01",
+      "section": "style",
+      "field": "color_palette",
+      "priority": "must",
+      "source_rule_ids": [
+        "S01"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "广阔的低饱和冷灰蓝展墙构成海报基底，少量琥珀暖色只用于标题和近旁的一小处投光。",
+        "en": "Use a broad, low-saturation cool blue-gray exhibition wall as the poster base; restrict the small amber accent to the title and a small nearby light patch."
+      }
+    },
+    {
+      "id": "C-S02",
+      "section": "style",
+      "field": "edge_control",
+      "priority": "must",
+      "source_rule_ids": [
+        "S02"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "主标题字面边缘清楚连续，纸页和展墙的轮廓较弱并断续融入相邻色面。",
+        "en": "Keep the title glyph edges clear and continuous; weaken and break the page and wall contours into the neighboring masses."
+      }
+    },
+    {
+      "id": "C-S03",
+      "section": "style",
+      "field": "detail_density",
+      "priority": "must",
+      "source_rule_ids": [
+        "S03"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "细节与图文对比集中于标题区，外围保留疏略纸页面形和大面积低密度色块。",
+        "en": "Concentrate detail and text contrast in the title area; retain sparse page silhouettes and broad, low-density masses around it."
+      }
+    },
+    {
+      "id": "C-S04",
+      "section": "narrative",
+      "field": "visual_path",
+      "priority": "must",
+      "source_rule_ids": [
+        "S04"
+      ],
+      "source_lock_ids": [],
+      "text": {
+        "zh": "由暗色纸页面形引导视线读到主标题，让唯一暖点、清晰边缘和主要细节在文字区域会合。",
+        "en": "Guide the eye from the dark page silhouettes to the main title, where the only warm accent, clearest edges, and primary detail converge."
+      }
+    }
+  ],
+  "output": {
+    "count": 1,
+    "aspect_ratio": "2:3",
+    "dimensions_px": {
+      "width": 1000,
+      "height": 1500
+    },
+    "format": "PNG"
+  },
+  "text_requirements": {
+    "mode": "exact",
+    "exact_text": [
+      "夜读｜第 3 届",
+      "2026.11.26"
+    ]
+  }
+}

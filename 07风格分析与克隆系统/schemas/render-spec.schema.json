@@ -1,0 +1,551 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SC-IMG render_spec 1.0.0",
+  "description": "Local export additionally checks references, coverage, slot parity and task consistency.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+    },
+    "scope": {
+      "enum": [
+        "style_only",
+        "task"
+      ]
+    },
+    "profile_ref": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[A-Za-z0-9.-]+)?$"
+        }
+      },
+      "required": [
+        "id",
+        "version"
+      ],
+      "additionalProperties": false
+    },
+    "task_ref": {
+      "anyOf": [
+        {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+            },
+            "version": {
+              "type": "string",
+              "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[A-Za-z0-9.-]+)?$"
+            }
+          },
+          "required": [
+            "id",
+            "version"
+          ],
+          "additionalProperties": false
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "core_style_rule_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "uniqueItems": true
+    },
+    "active_style_rule_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "uniqueItems": true
+    },
+    "rule_exclusions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "rule_id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "reason": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        },
+        "required": [
+          "rule_id",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "required_project_lock_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+      },
+      "uniqueItems": true
+    },
+    "slots": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9_]*$"
+      },
+      "uniqueItems": true
+    },
+    "items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "section": {
+            "enum": [
+              "style",
+              "character",
+              "environment",
+              "narrative",
+              "mood",
+              "technical"
+            ]
+          },
+          "field": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          },
+          "priority": {
+            "enum": [
+              "must",
+              "should",
+              "may"
+            ]
+          },
+          "source_rule_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+            },
+            "uniqueItems": true
+          },
+          "source_lock_ids": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+            },
+            "uniqueItems": true
+          },
+          "text": {
+            "type": "object",
+            "properties": {
+              "zh": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              },
+              "en": {
+                "type": "string",
+                "minLength": 1,
+                "pattern": "\\S"
+              }
+            },
+            "required": [
+              "zh",
+              "en"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "id",
+          "section",
+          "field",
+          "priority",
+          "source_rule_ids",
+          "source_lock_ids",
+          "text"
+        ],
+        "additionalProperties": false,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "style"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "narrative_stance",
+                    "identity",
+                    "artist_reference",
+                    "movement",
+                    "line_quality",
+                    "color_palette",
+                    "light_logic",
+                    "rendering_style",
+                    "space_treatment",
+                    "edge_control",
+                    "finish_control",
+                    "texture",
+                    "detail_density"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "character"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "subject",
+                    "identity",
+                    "form",
+                    "quantity",
+                    "face",
+                    "posture",
+                    "action",
+                    "expression",
+                    "gaze",
+                    "costume",
+                    "distinctive_feature",
+                    "assets"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "environment"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "setting",
+                    "time",
+                    "atmosphere",
+                    "depth_structure",
+                    "scale",
+                    "relation_to_subject"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "narrative"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "intent",
+                    "subject_scene_relation",
+                    "tension",
+                    "visual_path",
+                    "anchor_point",
+                    "lingering_question"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "mood"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "primary",
+                    "secondary",
+                    "complexity",
+                    "visual_cues"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "if": {
+              "properties": {
+                "section": {
+                  "const": "technical"
+                }
+              }
+            },
+            "then": {
+              "properties": {
+                "field": {
+                  "enum": [
+                    "composition",
+                    "shot_type",
+                    "protected_items",
+                    "negative_constraints"
+                  ]
+                }
+              }
+            }
+          }
+        ]
+      },
+      "minItems": 1,
+      "contains": {
+        "properties": {
+          "section": {
+            "const": "character"
+          },
+          "field": {
+            "const": "subject"
+          },
+          "priority": {
+            "const": "must"
+          }
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "anyOf": [
+            {
+              "type": "integer",
+              "minimum": 1,
+              "maximum": 9007199254740991
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "aspect_ratio": {
+          "anyOf": [
+            {
+              "type": "string",
+              "pattern": "^[1-9]\\d*:[1-9]\\d*$"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "dimensions_px": {
+          "anyOf": [
+            {
+              "type": "object",
+              "properties": {
+                "width": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                },
+                "height": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 9007199254740991
+                }
+              },
+              "required": [
+                "width",
+                "height"
+              ],
+              "additionalProperties": false
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "format": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "\\S"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "count",
+        "aspect_ratio",
+        "dimensions_px",
+        "format"
+      ],
+      "additionalProperties": false
+    },
+    "text_requirements": {
+      "type": "object",
+      "properties": {
+        "mode": {
+          "enum": [
+            "none",
+            "exact",
+            "unspecified"
+          ]
+        },
+        "exact_text": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "\\S"
+          }
+        }
+      },
+      "required": [
+        "mode",
+        "exact_text"
+      ],
+      "additionalProperties": false,
+      "if": {
+        "properties": {
+          "mode": {
+            "const": "exact"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "exact_text": {
+            "minItems": 1
+          }
+        }
+      },
+      "else": {
+        "properties": {
+          "exact_text": {
+            "maxItems": 0
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "id",
+    "scope",
+    "profile_ref",
+    "task_ref",
+    "core_style_rule_ids",
+    "active_style_rule_ids",
+    "rule_exclusions",
+    "required_project_lock_ids",
+    "slots",
+    "items",
+    "output",
+    "text_requirements"
+  ],
+  "additionalProperties": false,
+  "if": {
+    "properties": {
+      "scope": {
+        "const": "task"
+      }
+    }
+  },
+  "then": {
+    "properties": {
+      "task_ref": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[A-Za-z][A-Za-z0-9_.-]*$"
+          },
+          "version": {
+            "type": "string",
+            "pattern": "^\\d+\\.\\d+\\.\\d+(?:-[A-Za-z0-9.-]+)?$"
+          }
+        },
+        "required": [
+          "id",
+          "version"
+        ],
+        "additionalProperties": false
+      },
+      "slots": {
+        "maxItems": 0
+      }
+    }
+  },
+  "else": {
+    "properties": {
+      "task_ref": {
+        "type": "null"
+      },
+      "required_project_lock_ids": {
+        "maxItems": 0
+      },
+      "slots": {
+        "minItems": 1
+      },
+      "items": {
+        "items": {
+          "properties": {
+            "source_lock_ids": {
+              "maxItems": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

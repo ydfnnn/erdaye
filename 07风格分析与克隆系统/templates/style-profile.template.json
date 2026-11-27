@@ -1,0 +1,119 @@
+{
+  "schema_version": "1.0.0",
+  "id": "SP-001",
+  "version": "1.0.0",
+  "parent_profile": null,
+  "name": "",
+  "status": "provisional",
+  "scope": {
+    "level": "work",
+    "applies_to": [],
+    "uncertainties": []
+  },
+  "references": [
+    {
+      "id": "REF-01",
+      "roles": [
+        "style_reference"
+      ],
+      "locator": "",
+      "version": null,
+      "access": "unavailable",
+      "inherit": []
+    }
+  ],
+  "evidence": [
+    {
+      "id": "O01",
+      "kind": "observation",
+      "reference_ids": [
+        "REF-01"
+      ],
+      "region": "",
+      "description": ""
+    }
+  ],
+  "narrative_stance": "",
+  "modules": {
+    "A1": {
+      "name": "风格本体",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "B1": {
+      "name": "色彩",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "B2": {
+      "name": "光线",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "B3": {
+      "name": "空间构图",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "B4": {
+      "name": "尺度",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "C1": {
+      "name": "绘画语言",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "C2": {
+      "name": "边缘",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "C3": {
+      "name": "完成度",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "C4": {
+      "name": "材质纹理",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "D1": {
+      "name": "主体设计",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "E1": {
+      "name": "信息密度",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "E2": {
+      "name": "视觉锚点",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    },
+    "E3": {
+      "name": "视觉张力",
+      "status": "pending",
+      "note": "",
+      "rule_ids": []
+    }
+  },
+  "core_rule_ids": [],
+  "rules": []
+}

@@ -1,0 +1,174 @@
+{
+  "zh_json": {
+    "style": {
+      "rendering_style": [
+        {
+          "id": "T04",
+          "priority": "must",
+          "text": "画面使用干净的平面色块，优先保证字形边缘清楚。"
+        }
+      ],
+      "color_palette": [
+        {
+          "id": "C-S01",
+          "priority": "must",
+          "text": "广阔的低饱和冷灰蓝展墙构成海报基底，少量琥珀暖色只用于标题和近旁的一小处投光。"
+        }
+      ],
+      "edge_control": [
+        {
+          "id": "C-S02",
+          "priority": "must",
+          "text": "主标题字面边缘清楚连续，纸页和展墙的轮廓较弱并断续融入相邻色面。"
+        }
+      ],
+      "detail_density": [
+        {
+          "id": "C-S03",
+          "priority": "must",
+          "text": "细节与图文对比集中于标题区，外围保留疏略纸页面形和大面积低密度色块。"
+        }
+      ]
+    },
+    "character": {
+      "subject": [
+        {
+          "id": "T01",
+          "priority": "must",
+          "text": "表现阅读活动的主标题与抽象纸页轮廓组成的海报。"
+        }
+      ]
+    },
+    "environment": {
+      "setting": [
+        {
+          "id": "T03",
+          "priority": "must",
+          "text": "用展墙般的平面大冷色块建立安静环境。"
+        }
+      ]
+    },
+    "narrative": {
+      "visual_path": [
+        {
+          "id": "C-S04",
+          "priority": "must",
+          "text": "由暗色纸页面形引导视线读到主标题，让唯一暖点、清晰边缘和主要细节在文字区域会合。"
+        }
+      ]
+    },
+    "mood": {},
+    "technical": {
+      "protected_items": [
+        {
+          "id": "T02",
+          "priority": "must",
+          "text": "日期紧随主标题置于下方并降低字号，保持从上到下的阅读顺序。"
+        }
+      ],
+      "output": {
+        "count": 1,
+        "aspect_ratio": "2:3",
+        "dimensions_px": {
+          "width": 1000,
+          "height": 1500
+        },
+        "format": "PNG"
+      },
+      "text_requirements": {
+        "mode": "exact",
+        "exact_text": [
+          "夜读｜第 3 届",
+          "2026.11.26"
+        ]
+      }
+    }
+  },
+  "en_json": {
+    "style": {
+      "rendering_style": [
+        {
+          "id": "T04",
+          "priority": "must",
+          "text": "Use clean flat color areas and prioritize crisp glyph edges."
+        }
+      ],
+      "color_palette": [
+        {
+          "id": "C-S01",
+          "priority": "must",
+          "text": "Use a broad, low-saturation cool blue-gray exhibition wall as the poster base; restrict the small amber accent to the title and a small nearby light patch."
+        }
+      ],
+      "edge_control": [
+        {
+          "id": "C-S02",
+          "priority": "must",
+          "text": "Keep the title glyph edges clear and continuous; weaken and break the page and wall contours into the neighboring masses."
+        }
+      ],
+      "detail_density": [
+        {
+          "id": "C-S03",
+          "priority": "must",
+          "text": "Concentrate detail and text contrast in the title area; retain sparse page silhouettes and broad, low-density masses around it."
+        }
+      ]
+    },
+    "character": {
+      "subject": [
+        {
+          "id": "T01",
+          "priority": "must",
+          "text": "Create a reading-event poster featuring the main title and abstract page silhouettes."
+        }
+      ]
+    },
+    "environment": {
+      "setting": [
+        {
+          "id": "T03",
+          "priority": "must",
+          "text": "Establish a quiet setting with broad cool color masses like a flat exhibition wall."
+        }
+      ]
+    },
+    "narrative": {
+      "visual_path": [
+        {
+          "id": "C-S04",
+          "priority": "must",
+          "text": "Guide the eye from the dark page silhouettes to the main title, where the only warm accent, clearest edges, and primary detail converge."
+        }
+      ]
+    },
+    "mood": {},
+    "technical": {
+      "protected_items": [
+        {
+          "id": "T02",
+          "priority": "must",
+          "text": "Set the date immediately below the main title at a smaller size, preserving a top-to-bottom reading order."
+        }
+      ],
+      "output": {
+        "count": 1,
+        "aspect_ratio": "2:3",
+        "dimensions_px": {
+          "width": 1000,
+          "height": 1500
+        },
+        "format": "PNG"
+      },
+      "text_requirements": {
+        "mode": "exact",
+        "exact_text": [
+          "夜读｜第 3 届",
+          "2026.11.26"
+        ]
+      }
+    }
+  },
+  "zh_simple": "表现阅读活动的主标题与抽象纸页轮廓组成的海报。用展墙般的平面大冷色块建立安静环境。画面使用干净的平面色块，优先保证字形边缘清楚。广阔的低饱和冷灰蓝展墙构成海报基底，少量琥珀暖色只用于标题和近旁的一小处投光。主标题字面边缘清楚连续，纸页和展墙的轮廓较弱并断续融入相邻色面。细节与图文对比集中于标题区，外围保留疏略纸页面形和大面积低密度色块。由暗色纸页面形引导视线读到主标题，让唯一暖点、清晰边缘和主要细节在文字区域会合。日期紧随主标题置于下方并降低字号，保持从上到下的阅读顺序。输出 1 张图。画幅 2:3。尺寸 1000 × 1500 像素。文件格式 PNG。画面逐字呈现 \"夜读｜第 3 届\"、\"2026.11.26\"，外侧引号仅用于划分条目。",
+  "natural_language_zh": "表现阅读活动的主标题与抽象纸页轮廓组成的海报。\n\n用展墙般的平面大冷色块建立安静环境。\n\n画面使用干净的平面色块，优先保证字形边缘清楚。广阔的低饱和冷灰蓝展墙构成海报基底，少量琥珀暖色只用于标题和近旁的一小处投光。主标题字面边缘清楚连续，纸页和展墙的轮廓较弱并断续融入相邻色面。细节与图文对比集中于标题区，外围保留疏略纸页面形和大面积低密度色块。\n\n由暗色纸页面形引导视线读到主标题，让唯一暖点、清晰边缘和主要细节在文字区域会合。\n\n日期紧随主标题置于下方并降低字号，保持从上到下的阅读顺序。\n\n输出 1 张图。画幅 2:3。尺寸 1000 × 1500 像素。文件格式 PNG。画面逐字呈现 \"夜读｜第 3 届\"、\"2026.11.26\"，外侧引号仅用于划分条目。"
+}

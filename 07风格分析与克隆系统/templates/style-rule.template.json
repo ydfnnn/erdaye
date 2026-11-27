@@ -1,0 +1,17 @@
+{
+  "id": "S01",
+  "module": "B1",
+  "category": "style",
+  "variability": "core",
+  "priority": "must",
+  "evidence_ids": [],
+  "condition": "",
+  "target": "",
+  "expression": "",
+  "relationship": "",
+  "purpose": "",
+  "allowed_variation": "",
+  "requires": [],
+  "excludes": [],
+  "check": ""
+}

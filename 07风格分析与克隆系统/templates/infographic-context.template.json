@@ -1,0 +1,11 @@
+{
+  "primary_logic": null,
+  "format_tags": [],
+  "case_refs": [],
+  "source_revision": null,
+  "data_sources": [{ "path": "", "role": "content_reference", "fields": [] }],
+  "narrative_ref": null,
+  "encoding_ref": null,
+  "method_refs": [],
+  "data_boundaries": [{ "status": "unknown", "description": "" }]
+}

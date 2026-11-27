@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0.0",
+  "task_ref": {
+    "id": "T-CASE-0002",
+    "version": "1.0.0"
+  },
+  "output_id": null,
+  "image_status": "not_generated",
+  "execution": {
+    "backend": null,
+    "model_version": null,
+    "entry_point": null,
+    "reference_inputs": [],
+    "submitted_prompt": null,
+    "seed": null
+  },
+  "checks": [
+    {
+      "dimension": "style",
+      "rule_ids": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "status": "unknown",
+      "evidence": "待对照成图。教学档案本身为 provisional。",
+      "blocking": true
+    },
+    {
+      "dimension": "content",
+      "rule_ids": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "status": "unknown",
+      "evidence": "待在成图中定位五节点与虚线方向。",
+      "blocking": true
+    },
+    {
+      "dimension": "locked_items",
+      "rule_ids": [
+        "P01",
+        "P02",
+        "P03"
+      ],
+      "status": "unknown",
+      "evidence": "待在成图中定位五节点与虚线方向。",
+      "blocking": true
+    },
+    {
+      "dimension": "text_and_layout",
+      "rule_ids": [],
+      "status": "unknown",
+      "evidence": "待比对实际文字、规格和图像文件。",
+      "blocking": true
+    },
+    {
+      "dimension": "technical_delivery",
+      "rule_ids": [],
+      "status": "unknown",
+      "evidence": "待比对实际文字、规格和图像文件。",
+      "blocking": true
+    },
+    {
+      "dimension": "series_consistency",
+      "rule_ids": [],
+      "status": "not_applicable",
+      "evidence": "单图演示。",
+      "blocking": false
+    }
+  ],
+  "revision": {
+    "parent_output_id": null,
+    "target_changes": [],
+    "protected_items": [],
+    "affected_rule_ids": [],
+    "target_result": null,
+    "non_target_result": null
+  }
+}

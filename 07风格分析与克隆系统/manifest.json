@@ -1,0 +1,19 @@
+{
+  "system_id": "sc-img",
+  "version": "1.0.0",
+  "entry": "SYSTEM.md",
+  "entry_sha256": "8d1f69177639c6ebf8d3a0665f4add8c42f8398b0eecee259fcda653da846269",
+  "entry_end_marker": "SC-IMG 1.0.0 运行正文结束",
+  "memory_card": "MEMORY.md",
+  "schema": "schemas/render-spec.schema.json",
+  "outputs": [
+    "zh_json",
+    "en_json",
+    "zh_simple",
+    "natural_language_zh"
+  ],
+  "validation": "node tools/verify.cjs",
+  "repository_path": "07风格分析与克隆系统",
+  "integration_guide": "00-仓库联动说明.md",
+  "linked_example": "examples/CASE-0002-联动示例.md"
+}
